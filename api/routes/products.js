@@ -36,7 +36,7 @@ const upload = multer({
   fileFilter: fileFilter,
 });
 
-route.get("/");
+route.get("/", productController.get_all_products);
 
 route.post(
   "/",

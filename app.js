@@ -46,9 +46,9 @@ app.use("/products", productsRoute);
 app.use("/orders", ordersRoute);
 app.use("/users", userRoute);
 
-app.use("/", (req, res, next) => {
-  res.status(200).send("<h1> Server is running </h1>");
-});
+// app.use("/", (req, res, next) => {
+//   res.status(200).send("<h1> Server is running </h1>");
+// });
 
 //handle 404 not found error
 app.use((req, res, next) => {
